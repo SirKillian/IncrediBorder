@@ -11,6 +11,7 @@ scoreboard players add .days daycount 0
 # Setting the worldborder to where the player spawned.
 worldborder center ~.5 ~.5
 worldborder set 15
+worldborder add 10 1200
 
  
 execute as @a[tag=!daysplayer] run tag @s add daysplayer

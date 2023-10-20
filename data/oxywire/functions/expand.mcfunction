@@ -8,7 +8,7 @@ execute store result score .days daysaved run time query day
 
 # check what day it is
 
-execute if score .days daysaved > .days daycount in minecraft:overworld run worldborder add 2
+execute if score .days daysaved > .days daycount in minecraft:overworld run worldborder add 10 1200
 
 execute if score .days daysaved > .days daycount run title @a title ["",{"text":"Day ","color":"gold"},{"score":{"name":".days","objective":"daysaved"},"color":"gold"}]
 execute if score .days daysaved > .days daycount run title @a subtitle {"text":"Rise and shine..."}
